@@ -10,8 +10,8 @@ sudo apt install wget unzip apache2 -y > /dev/null
 
 echo "Starting and Enabling Apache Service"
 echo "------------------------------------"
-sudo systemctl start apache2
-sudo systemctl enable apache2
+sudo systemctl start $1
+sudo systemctl enable $2
 
 
 echo "Starting Artifact Deployment"
